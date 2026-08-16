@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="index.php" method="post"enctype="multipart/form-data">
+    <label for="username">username</label>
+    <input type="text" id="username" minlength="6" maxlength="15" required><br>
+
+    <label for="address">address</label>
+    <input type="text" id="address" required><br>
+
+    <label for="email">email</label>
+    <input type="text" id="email" placeholder="SSquarepants@gmail.com" required><br>
+    
+    <label for="password">password</label>
+    <input type="password" id="password" minlength="8" maxlength="15" required><br> 
+
+    <label for="bday">birthdate</label>
+    <input type="date" id="bday" required><br>
+
+    <label for="quantity">quantity</label>
+    <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+    <label for="phone">phone number</label>
+    <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]" required><br>
+
+    <label for="title">title:</label>
+   
+    <label for="Mr.">Mr.</label>
+    <input type="radio" id="Mr." value="Mr." name="tittle">
+
+    <label for="Ms.">Ms.</label>
+    <input type="radio" id="Ms." value="Ms." name="tittle">
+
+    <label for="PhD.">PhD.</label>
+    <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+    <label for="payment">payment</label>
+    <select>
+        <option cash> cash</option>
+        <option debit card> debit card</option>
+        <option credit card> credit card</option>
+    </select><br>
+
+    <label for="subscribe">subscribe:</label>
+    <input type="checkbox" id="subscribe"><br>
+
+    <label for="comment">comment:</label>
+    <textarea id="comment" row="3" cols="25"></textarea><br>
+
+    <label for="file">file:</label>
+    <input type="file" id="file"  accept="image/png,image/jpeg"><br>
+
+
+    <input type="reset">
+    <br>
+    <input type="submit">
+
+    </form>
+</body>
+</html>
